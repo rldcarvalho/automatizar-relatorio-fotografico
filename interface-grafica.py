@@ -64,11 +64,10 @@ def principal():
     while True:
         event, values = janela.Read()
         print(event, values)
-        if event == sg.WIN_CLOSED or event == "":
+        if event == sg.WIN_CLOSED:
             break
         if event == "Gerar Relatório":
             return values
-            break
         if event == "OK":
             manutencao = values['manutencao']
             poda = values['poda']
